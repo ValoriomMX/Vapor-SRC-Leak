@@ -1,0 +1,1007 @@
+# $$\    $$\                                        
+# $$ |   $$ |                                       
+# $$ |   $$ |$$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\  
+# \$$\  $$  |\____$$\ $$  __$$\ $$  __$$\ $$  __$$\ 
+#  \$$\$$  / $$$$$$$ |$$ /  $$ |$$ /  $$ |$$ |  \__|
+#   \$$$  / $$  __$$ |$$ |  $$ |$$ |  $$ |$$ |      
+#    \$  /  \$$$$$$$ |$$$$$$$  |\$$$$$$  |$$ |      
+#     \_/    \_______|$$  ____/  \______/ \__|      
+#                     $$ |                          
+#                     $$ |                          
+#                     \__|                          
+
+# ~ Main Settings
+
+KITMAP: true
+UHCF: false
+TABLIST: true
+TIMEZONE: "EST"
+
+# ~ Secondary Settings
+
+HOLOGRAMS: false # Requires HolographicDisplays
+ENDERPEARL-GLITCH: true 
+DROP-ITEMS-SPAWN: true
+WHITELIST-MESSAGE: "&cThis Modality is currently under maintenance, check back soon!"
+STARTUP-COMMAND: "timings off"
+DELAY-CHAT-ON-START: true
+DELAY-CHAT-ON-START-TIME: 5
+DELAY-STORE: 'store.vaporhcf.com'
+KITMAP-KILLECONOMY: 100
+KITMAP-KILLREWARD: "cr givekey %ign% Reward 1"
+RALLY-STYLE: "SCOREBOARD" # LUNAR / SCOREBOARD
+
+
+# ~ Custom Enchantments Settings
+
+CUSTOMENCHANTMENTS: true
+LORE-SPEED: "&9Speed II"
+LORE-FIRERESISTANCE: "&9Fire Resistance I"
+
+# ~ Elevator Sign Settings
+
+ELEVATOR-SIGN:
+  ENABLED: true
+  DISABLE-IN-COMBAT: true
+  CLAIM-ONLY: false
+  ELEVATOR-UP:
+    - "[&bElevator&0]"
+    - "Up"
+    - ""
+    - ""
+  ELEVATOR-DOWN:
+    - "[&bElevator&0]"
+    - "Down"
+    - ""
+    - ""
+
+# ~ Join Sound
+
+SOUND-ENABLED: true
+SOUND: "CAT_MEOW"
+
+# ~ Disable Commands Settings
+
+DISABLE-COMMANDS:
+- "//calc"
+
+# ~ Beacon Renamer Settings
+
+BEACON-RENAME:
+  MIXING: "&9Random Name... &7%random%"
+  MIXED: "&9Name: &f%name%"
+  COOLDOWN: "&cYou must wait %time% seconds."
+  RENAMES:
+    - "&9Astro-Gang"
+    - "&9Excalibur"
+    - "&9Saber"
+        
+# ~ Chat Settings (Public)
+
+PUBLIC: "&8[%fac%&8] %prefix%%kills%%rank%&7%ign%&7: &f%message%"
+
+# ~ Placeholders
+
+FACTIONLESS: "&c-"
+KILLS: "&8(&a%kills%&8) &r"
+
+# ~ Chat Settings (Private)
+
+FACTION: "&a(Faction) %ign%&7: &e%message%"
+ALLY: "&d(Alliance) %ign%&7: &e%message%"
+OFFICER: "&9(Captain) %ign%&7: &e%message%"
+
+# ~ Main Cooldown Settings
+APPLE: 5 #SECONDS
+GAPPLE: 60 #MINUTES
+ARCHER-MARK: 10 #SECONDS
+CLASS-WARMUP: 5 #SECONDS 
+ENDERPEARL: 16 #SECONDS
+LOGOUT: 30 #SECONDS
+SPAWN: 30 #SECONDS
+SPAWN_TAG: 30 #SECONDS
+FIRST_PVP_TIMER: 120 #MINUTES
+PVP_TIMER: 60 #MINUTES
+STUCK: 45 #SECONDS
+HOME:
+  NORMAL: 10 #SECONDS
+  NETHER: 15 #SECONDS
+
+# ~ Abilities Cooldown Settings
+
+ROTTENEGG:
+  NAME: "&5&lRotten Egg"
+  LORE: "&7You will receive 20s of cooldown"
+  COOLDOWN: 20 #SECONDS
+  USERS-USE-ROTTENEGG: true
+
+GRAPPLINGHOOK:
+  NAME: "Grappling Hook" # ONLY NAME / NO COLORS
+  LORE: "You will receive 10s of cooldown" # ONLY LORE / NO COLORS
+  COOLDOWN: 10s #SECONDS
+  
+SWITCHER:
+  NAME: "&a&lSwitcher"
+  LORE: "&7You will receive 25s of cooldown"
+  COOLDOWN: 25 #SECONDS
+  USERS-USE-SWITCHER: true
+  
+BELCHBOMB:
+  NAME: "&2&lBelck Bomb"
+  LORE: "&7You will receive 30s of cooldown"
+  ITEM: "INK_SACK"
+  COOLDOWN: 30 #SECONDS
+  
+TRAPEVADING:
+  NAME: "&6&lTrap Evading"
+  LORE: "&7You will receive 60s of cooldown"
+  ITEM: "BLAZE_ROD"
+  COOLDOWN: 60 #SECONDS
+  
+FREEZEGUN:
+  NAME: "&e&lFreeze Gun"
+  LORE: "&7You will receive 15s of cooldown"
+  ITEM: "GOLD_HOE"
+  COOLDOWN: 15 #SECONDS
+  
+POCKETBARD:
+  NAME: "&6&lPocket Bard"
+  LORE: "&7You will receive 60s of cooldown"
+  COOLDOWN: 60 #SECONDS
+  
+SHIELD:
+  NAME: "&6&lShield"
+  NAME2: "Shield" # ONLY NAME / NO COLORS
+  LORE: "&7You will receive 45s of cooldown"
+  ITEM: "ENDER_CHEST"
+  COOLDOWN: 45 #SECONDS
+  
+ROCKET: 
+  NAME: "&4Rocket"
+  LORE: "&7You will receive 30s of cooldown"
+  ITEM: "FIREWORK"
+  COOLDOWN: 30 #SECONDS
+  
+COCAINE:
+  NAME: "&b&lCocaine"
+  LORE: "&7You will receive 60s of cooldwon"
+  ITEM: "SUGAR"
+  COOLDOWN: 60 #SECONDS
+  
+MIXER:
+  NAME: "&6&lMixer"
+  LORE: "&7You will receive 60s of cooldown"
+  ITEM: "BONE"
+  COOLDOWN: 60 #SECONDS
+  
+SUPERAXE:
+  NAME: "&c&lSuperAxe"
+  LORE: "&7You will receive 45s of cooldown"
+  ITEM: "GOLD_AXE"
+  COOLDOWN: 45 #SECONDS
+  
+MAGICPILL:
+  NAME: "&d&lMagic Pill"
+  LORE: "&7You will receive 60s of cooldown"
+  ITEM: "GHAST_TEAR"
+  COOLDOWN: 60 #SECONDS
+  
+RAWPOTION:
+  NAME: "&5Raw Potion"
+  LORE: "&7You will receive 60s of cooldown"
+  ITEM: "POTION"
+  COOLDOWN: 60 #SECONDS
+  
+SWITCHSTICK:
+  NAME: "&9&lSwitch Stick"
+  LORE: "&7You will receive 30s of cooldown"
+  LORE2: ""
+  LORE3: "&eUses&f: &c5" #ONLY CHANGE USES / NO COLORS
+  ITEM: "STICK"
+  COOLDOWN: 30 #SECONDS
+  
+WITHERGUN:
+  NAME: "&c&lWither Gun"
+  LORE: "&7You will receive 30s of cooldown"
+  ITEM: "STONE_HOE"
+  COOLDOWN: 30 #SECONDS
+  
+STORMBREAKER:
+  NAME: "&b&lStorm Breaker"
+  LORE: "&7You will receive 25s of cooldown"
+  ITEM: "DIAMOND_AXE"
+  COOLDOWN: 25 #SECONDS
+  
+FASTPEARL:
+  NAME: "&5&lFast Pearl"
+  LORE: "&7Reduced Pearl Cooldown When Using This Item!"
+  COOLDOWN: 8 #SECONDS
+  
+ANTIFALL:
+  NAME: "&6&lAnti-Fall"
+  LORE: "&7You will receive 60s of cooldown"
+  ITEM: "FEATHER"
+  COOLDOWN: 60 #SECONDS
+  
+FAKEPEARL:
+  NAME: "&6&lFake Pearl"
+  LORE: "&7You will receive 5m of cooldown"
+  COOLDOWN: 300 #SECONDS
+  
+NINJASHEAR:
+  NAME: "&6&lNinja Shear"
+  LORE: "&7You will receive 60s of cooldown"
+  LORE2: ""
+  LORE3: "&eUses&f: &c5" #ONLY CHANGE USES / NO COLORS
+  ITEM: "SHEARS"
+  COOLDOWN: 60 #SECONDS
+  
+AUTOBOW:
+  NAME: "&5&lAuto Bow"
+  LORE: "&7You will receive 30s of cooldown"
+  COOLDOWN: 30 #SECONDS
+  
+FIREBALL:
+  NAME: "&c&lFireball"
+  LORE: "&7You will receive 45s of cooldown"
+  COOLDOWN: 45 #SECONDS
+
+# ~ Limitator Settings
+
+PROTECTION: 1
+SHARPNESS: 1
+POWER: 4
+FLAME: 1
+INFINITY: 1
+FEATHER_FALLING: 3
+UNBREAKING: 3
+EFFICIENCY: 4
+
+# ~ Faction Settings
+
+STARTING-BALANCE: 500
+MIN-NAME: 3
+MAX-NAME: 16
+MAX-MEMBERS: 20
+MAX-ALLIES: 0
+DTR-LOSS-MULTIPLIER: 0.5
+DEATHBAN-MULTIPLIER: 1.0
+BUILDABLE-AT: 300
+MAX-DTR-REGEN: 6.3
+WARZONE-RADIUS: 800
+MAX-CLAIMS-PER-FAC: 2
+DTR-REGEN-TIME: 32
+DTR-UPDATE: 45000
+DTR-INCREMENT: 0.1
+MAX-DTR: 6.5
+ROAD-MIN-HEIGHT: 0
+ROAD-MAX-HEIGHT: 256
+SUBCLAIMS:
+  MIN-NAME: 3
+  MAX-NAME: 16
+DEATHBAN:
+  TIME: "60m"
+  EOTW: "&cDeathbanned for the entirety of the map due to EOTW."
+  NORMAL: "&cYou are deathbanned for %reason% &7- &cTime: %time%"
+COLORS:
+  TEAMMATE: "DARK_GREEN"
+  ALLY: "AQUA"
+  CAPTAIN: "BLUE"
+  ENEMY: "RED"
+  SPAWN: "GREEN"
+  ROAD: "RED"
+  WARZONE: "RED"
+  GLOWSTONE: "GOLD"
+  DTC: "DARK_GREEN"
+  WILDERNESS: "GRAY"
+  ENDPORTAL: "BLUE"
+  KOTH: "&b"
+  CONQUEST: "&5"
+BLOCKEDFAC-NAMES:
+- 'nigga'
+- 'shit'
+- 'niggar'
+- 'nigger'
+- 'eotw'
+
+# ~ Border Settings
+OVERWORLD: 2500
+NETHER: 2000
+END: 1500
+
+# ~ Clear Settings
+
+CLEAR:
+  ENABLED: true
+  INTERVAL: 6 # Minutes
+  MESSAGE: "&7[&9C&7] &fCleared all items on the server"
+
+# ~ Deathban Settings
+
+DEATHBAN:
+  DEATHBAN_ONE:
+    PERMISSION: "deathban.1"
+    TIME: 0m
+  DEATHBAN_TWO:
+    PERMISSION: "deathban.2"
+    TIME: 5m
+  DEATHBAN_THREE:
+    PERMISSION: "deathban.3"
+    TIME: 10m
+  DEATHBAN_FOUR:
+    PERMISSION: "deathban.4"
+    TIME: 15m
+  DEATHBAN_FIVE:
+    PERMISSION: "deathban.5"
+    TIME: 20m
+  DEATHBAN_SIX:
+    PERMISSION: "deathban.6"
+    TIME: 25m
+  DEATHBAN_SEVEN:
+    PERMISSION: "deathban.7"
+    TIME: 30m
+  DEATHBAN_EIGHT:
+    PERMISSION: "deathban.8"
+    TIME: 45m
+  DEATHBAN_NINE:
+    PERMISSION: "deathban.9"
+    TIME: 50m
+  DEATHBAN_TEN:
+    PERMISSION: "deathban.10"
+    TIME: 60m
+
+# ~ Nametags Settings
+
+NAMETAGS: 
+  TEAMMATE-TAG: "&2"
+  ENEMY-TAG: "&c"
+  ALLY-TAG: "&b"
+  ARCHER-TAG: "&e"
+  FOCUS-TAG: "&d"
+  FROZEN-TAG: "&3"
+  TOPONE-TAG: "&6#1 "
+  TOPTWO-TAG: "&7#2 "
+  TOPTHREE-TAG: "&f#3 "
+  STAFF-TAG: "&9[S] "
+  LUNAR:
+    ENABLED: true
+    LINE: "&7[%faction% &7| %dtr%&7]"
+  
+# ~ CombatLog Settings
+
+COMBATLOG:
+  DESPAWN-DELAY-TICKS: 600
+  ENABLED: true
+
+# ~ StaffMode Settings
+
+STAFFMODE:
+  ENABLED: true
+  VANISH-ON-JOIN: false
+  STAFFMODE-ON-JOIN: true
+  ARMOR:
+    HELMET: 
+    CHESTPLATE: 
+    LEGGINGS: 304
+    BOOTS: 
+  EFFECTS: 
+    FIRERESISTANCE: true
+    SPEED: true
+    NIGHTVISION: true
+  ITEMS:
+    TELEPORTER:
+      NAME: "&9Teleporter"
+      ITEM: "COMPASS"
+      SLOT: 0
+      ENABLED: true
+    INSPECT: 
+      NAME: "&9Inventory Inspect"
+      ITEM: "BOOK"
+      SLOT: 1
+      ENABLED: true
+    FREEZE: 
+      NAME: "&9Freeze Player"
+      ITEM: "ICE"
+      SLOT: 4
+      ENABLED: true
+    WORLDEDIT: 
+      NAME: "&9WorldEdit Wand"
+      ITEM: "WOOD_AXE"
+      SLOT: 6
+      ENABLED: true
+    TELEPORT: 
+      NAME: "&9Random Teleport"
+      ITEM: "WATCH"
+      SLOT: 8
+      ENABLED: true
+    VANISH-ON: 
+      NAME: "&9Vanished: &aTrue"
+      ITEM: "INK_SACK"
+      DATA: 10
+      SLOT: 7
+      ENABLED: true
+    VANISH-OFF: 
+      NAME: "&9Vanished: &cFalse"
+      ITEM: "INK_SACK"
+      DATA: 8
+      SLOT: 7
+
+# ~ Donor Settings
+
+ONLINE-DONATOR:
+  ENABLED: true
+  INTERVAL: 5 # Minutes
+  STORE: "store.vapor.com"
+  BROADCAST:
+    - ''
+    - '&9&lOnline Donators &7%right-arrow% &f%player%'
+    - '&7You can get your donor rank in &9%store%'
+    - ''
+
+# ~ Disable Mobs Settings
+
+DISABLEDMOBS:
+  - "GHAST"
+
+# ~ Partner Packages Settings
+
+PACKAGES-SETTINGS:
+  MATERIAL: DROPPER
+  NAME: "&bPartner Package"
+  LORE: "&7Right click to open a partner package"
+
+PACKAGES-LIST:
+  Vapor: 
+    DISPLAY-NAME: "&9Vapor Package"
+    COMMANDS:
+      - "ability give ninjashear %player% 1"
+      - "bcraw &9&l%player% &bhas opened a &9&lPartner Package!"
+    ITEMS:
+      - "DIAMOND_SWORD 1 DAMAGE_ALL:2 DURABILITY:3 NAME:&9Vapor_Sword"
+      - "ENDER_PEARL 16 NAME:&9Vapor_Pearl"
+
+# ~ Reclaim Settings
+
+RECLAIM-MESSAGES:
+  RECLAIM-REDEEMED: '&cYou cannot use your donor perks for another %time%.'
+  NO-PERMISSION:
+  - '&cYou don''t have access to this command!'
+  - '  &cPurchase it at store.vaporhcf.com'
+
+RECLAIMS:
+  RECLAIM: "DAILY" # MAP / DAILY
+  Vapor:
+    NAME: '&7Vapor'
+    COMMANDS:
+    - bcraw &5&l%player% &dhas used &7/reclaim &dto receive their donator perks.
+    - crate givekey %player% Vapor 2
+    - lives give %player% 1
+    
+# ~ Revive Settings
+
+REVIVE-MESSAGES:
+  REVIVE-REDEMEED: '&cYou cannot revive another player for another %time%.'
+  NO-PERMISSION:
+  - '&cYou don''t have access to this command!'
+  - '  &cPurchase it at store.vaporhcf.com'
+
+REVIVES:
+  Vapor:
+    COOLDOWN: 60
+    BROADCAST: ""
+
+# ~ Other Settings
+
+NOCLEAN: false
+PLACE-IN-COMBAT: true
+BREAK-IN-COMBAT: true
+HIT-DETECTION: 20
+F-OPEN-COMMAND: true
+FREEZE-TEAMSPEAK: 'ts.vaporhcf.com'
+FREEZE-MESSAGE-INTERVAL: 3
+FREEZE-DISABLE-COMMANDS:
+  - 'msg'
+
+BREWER-SPEED: 2
+FURNACE-SPEED: 3
+
+# ~ Points Settings
+
+POINTS:
+  LOSS-PER-DEATH: 1
+  WIN-PER-KILL: 1
+  WIN-PER-KOTH: 3
+  WIN-PER-CONQUEST: 5
+ 
+# ~ Kits Settings
+
+KITS:
+  PROTECTION: 1
+  SHARPNESS: 1
+  POWER: 4
+  FLAME: 1
+  INFINITE: 1
+  FEATHER_FALLING: 3
+  UNBREAKING: 3
+  EFFICIENCY: 4
+  
+# ~ Exp Settings
+
+EXP:
+  GLOBAL: 2.0
+  FISHING: 2.0
+  SMELTING: 2.0
+  LOOTING: 1.5
+  LUCK: 1.5
+  FORTUNE: 1.5
+
+# ~ Tournament Settings
+
+TOURNAMENT:
+  ENABLED: true
+  SUMO-TOURNAMENT-REWARD: "cr givekey %player% Event 2"
+  LMS-TOURNAMENT-REWARD: "cr givekey %player% Event 4"
+  NAME-KEY: "Event"
+  DISABLE-COMMANDS:
+    - "spawn"
+    - "f home"
+    - "home"
+    - "f stuck"
+    - "stuck"
+    - "ec"
+    - "enderchest"
+    - "pv"
+    - "echest"
+    - "chest"
+    - "perks"
+    - "invis"
+    - "kits"
+    - "kit"
+    - "gkit"
+    - "staff"
+    - "repair"
+    - "fix"
+    - "feed"
+    - "heal"
+    - "reclaim"
+    - "fix all"
+    - "kit"
+    - "staffmode"
+    - "ec"
+    - "echest"
+    - "chest"
+    - "enderchest"
+    - "spawn"
+    - "f"
+    - "faction"
+    - "fac"
+    - "kits"
+    - "mod"
+    - "vanish"
+    - "gamemode"
+
+# ~ Settings Settings
+
+SETTINGS:
+  TITLE: "Settings"
+  SLOTS: 27
+  DEATH-MESSAGES:
+    ITEM: "SKULL_ITEM"
+    DATA: 0
+    COMMAND: "tdm"
+    DISPLAY-NAME: "&cDeath Messages"
+    LORE-ENABLE:
+      - ""
+      - "&7Do you want to see"
+      - "&7death messages?"
+      - ""
+      - "&a» &7Enabled"
+    LORE-DISABLE:
+      - ""
+      - "&7Do you want to see"
+      - "&7death messages?"
+      - ""
+      - "&c» &7Disabled"
+    SLOT: 9
+  MESSAGES-VISIBLE:
+    ITEM: "BOOK"
+    DATA: 0
+    COMMAND: "tpm"
+    DISPLAY-NAME: "&cPrivate Messages"
+    LORE-ENABLE:
+      - ""
+      - "&7Do you want to see"
+      - "&7private messages?"
+      - ""
+      - "&a» &7Enabled"
+    LORE-DISABLE:
+      - ""
+      - "&7Do you want to see"
+      - "&7private messages?"
+      - ""
+      - "&c» &7Disabled"
+    SLOT: 11
+  CLAIM-INFO:
+    ITEM: "PAPER"
+    DATA: 0
+    COMMAND: "claiminfo"
+    DISPLAY-NAME: "&cClaim Info"
+    LORE-ENABLE:
+      - ""
+      - "&7Do you want to see"
+      - "&7claim info in the sidebar?"
+      - ""
+      - "&a» &7Enabled"
+    LORE-DISABLE:
+      - ""
+      - "&7Do you want to see"
+      - "&7claim info in the sidebar?"
+      - ""
+      - "&c» &7Disabled"
+    SLOT: 13
+  POT-COUNTER:
+    ITEM: "BREWING_STAND_ITEM"
+    DATA: 0
+    COMMAND: "potcounter"
+    DISPLAY-NAME: "&cPotion Counter"
+    LORE-ENABLE:
+      - ""
+      - "&7Do you want to see your pots"
+      - "&7in the sidebar?"
+      - ""
+      - "&a» &7Enabled"
+    LORE-DISABLE:
+      - ""
+      - "&7Do you want to see your pots"
+      - "&7in the sidebar?"
+      - ""
+      - "&c» &7Disabled"
+    SLOT: 15
+  TEAM-INFO:
+    ITEM: "ITEM_FRAME"
+    DATA: 0
+    COMMAND: "teaminfo"
+    DISPLAY-NAME: "&cTeam Info"
+    LORE-ENABLE:
+      - ""
+      - "&7Do you want to see team info"
+      - "&7in the sidebar?"
+      - ""
+      - "&a» &7Enabled"
+    LORE-DISABLE:
+      - ""
+      - "&7Do you want to see team info"
+      - "&7in the sidebar?"
+      - ""
+      - "&c» &7Disabled"
+    SLOT: 17
+
+# ~ Classes Settings
+
+EQUIP-MESSAGE: "&a&l%right-arrow% &eClass &6%class% &eis now &aEnabled!"
+
+UNEQUIP-MESSAGE: "&a&l%right-arrow% &eClass &6%class% &eis now &cDisabled!"
+
+ARCHER:
+  ENABLED: true
+  NAME: "Archer"
+  ARCHER-TAG-DAMAGE: 0.25
+  WARMUP-ENABLED: true
+  WARMUP-TIME: 5 #SECONDS
+  SPEED-COOLDOWN: 30 #SECONDS
+  SPEED-LEVEL: 3
+  JUMP-COOLDOWN: 30 #SECONDS
+  JUMP-LEVEL: 7
+  
+BARD:
+  ENABLED: true
+  NAME: "Bard"
+  WARMUP-ENABLED: true
+  WARMUP-TIME: 5 #SECONDS
+  BUFF-COOLDOWN: 10 #SECONDS
+  TEAMMATE_NEARBY_RADIUS: 25 #BLOCKS
+  MAX-ENERGY: 120
+  EQUIPMENT:
+    HELMET: GOLD_HELMET
+    CHESTPLATE: GOLD_CHESTPLATE
+    LEGGINGS: GOLD_LEGGINGS
+    BOOTS: GOLD_BOOTS
+  ENERGY:
+    SATURATION: 
+      ENABLED: true
+      ITEM: "WHEAT"
+      HOLDEABLE:
+        AMPLIFIER-DURATION: 100
+        AMPLIFIER: 0
+      CLICKABLE:
+        COST: 15
+        AMPLIFIER-DURATION: 120
+        AMPLIFIER: 2
+    SPEED:
+      ENABLED: true
+      ITEM: "SUGAR"
+      HOLDEABLE:
+        AMPLIFIER-DURATION: 100
+        AMPLIFIER: 0
+      CLICKABLE:
+        COST: 25
+        AMPLIFIER-DURATION: 120
+        AMPLIFIER: 1
+    STRENGTH: 
+      ENABLED: true
+      ITEM: "BLAZE_POWDER"
+      HOLDEABLE:
+        AMPLIFIER-DURATION: 100
+        AMPLIFIER: 0
+      CLICKABLE:
+        COST: 45
+        AMPLIFIER-DURATION: 120
+        AMPLIFIER: 1
+    RESISTANCE:
+      ENABLED: true
+      ITEM: "IRON_INGOT"
+      HOLDEABLE:
+        AMPLIFIER-DURATION: 100
+        AMPLIFIER: 0
+      CLICKABLE:
+        COST: 30
+        AMPLIFIER-DURATION: 80
+        AMPLIFIER: 2
+    REGENERATION:
+      ENABLED: true
+      ITEM: "GHAST_TEAR"
+      HOLDEABLE:
+        AMPLIFIER-DURATION: 100
+        AMPLIFIER: 0
+      CLICKABLE:
+        COST: 45
+        AMPLIFIER-DURATION: 60
+        AMPLIFIER: 1
+    JUMP:
+      ENABLED: true
+      ITEM: "FEATHER"
+      HOLDEABLE:
+        AMPLIFIER-DURATION: 100
+        AMPLIFIER: 1
+      CLICKABLE:
+        COST: 30
+        AMPLIFIER-DURATION: 240
+        AMPLIFIER: 6
+    WITHER:
+      ENABLED: true
+      ITEM: "SPIDER_EYE"
+      CLICKABLE:
+        COST: 50
+        AMPLIFIER-DURATION: 100
+        AMPLIFIER: 1
+    FIRE_RESISTANCE:
+      ENABLED: true
+      ITEM: "MAGMA_CREAM"
+      HOLDEABLE:
+        AMPLIFIER-DURATION: 120
+        AMPLIFIER: 0
+      CLICKABLE:
+        COST: 20
+        AMPLIFIER-DURATION: 900
+        AMPLIFIER: 0
+    INVISIBILITY:
+      ENABLED: true
+      ITEM: "INK_SACK"
+      HOLDEABLE:
+        AMPLIFIER-DURATION: 120
+        AMPLIFIER: 0
+      CLICKABLE:
+        COST: 20
+        AMPLIFIER-DURATION: 900
+        AMPLIFIER: 0
+
+MINER:
+  ENABLED: true
+  NAME: "Miner"
+  WARMUP-ENABLED: true
+  WARMUP-TIME: 5 #SECONDS
+  INVIS-Y-LEVEL: 20
+  
+ROGUE:
+  ENABLED: true
+  NAME: "Rogue"
+  WARMUP-ENABLED: true
+  WARMUP-TIME: 5 #SECONDS
+  SPEED-COOLDOWN: 30 #SECONDS
+  SPEED-LEVEL: 3
+  JUMP-COOLDOWN: 30 #SECONDS
+  JUMP-LEVEL: 7
+
+BOMBER:
+  ENABLED: true
+  NAME: "Bomber"
+  WARMUP-ENABLED: true
+  WARMUP-TIME: 5 #SECONDS
+  STICK-TNT-COOLDOWN: 30 # SECONDS
+  EQUIPMENT:
+    HELMET: GOLD_HELMET
+    CHESTPLATE: DIAMOND_CHESTPLATE
+    LEGGINGS: DIAMOND_LEGGINGS
+    BOOTS: GOLD_BOOTS
+
+GHOST:
+  ENABLED: true
+  NAME: "Ghost"
+  WARMUP-TIME: 5 #SECONDS
+  WARMUP-ENABLED: true
+  GHOST-ITEM: "QUARTZ"
+  MODE-COOLDWON: 48 # SECONDS
+  NEARBY-RADIUS: 25
+  EQUIPMENT:
+    HELMET: CHAINMAIL_HELMET
+    CHESTPLATE: DIAMOND_CHESTPLATE
+    LEGGINGS: CHAINMAIL_LEGGINGS
+    BOOTS: DIAMOND_BOOTS
+
+MAGE:
+  ENABLED: true
+  NAME: "Mage"
+  WARMUP-TIME: 5 #SECONDS
+  WARMUP-ENABLED: true
+  BUFF-COOLDOWN: 5 #SECONDS
+  NEARBY-RADIUS: 25 #BLOCKS
+  MAX-ENERGY: 100
+  ENERGY:
+    CONFUSION: 
+      ITEM: "SUGAR"
+      AMPLIFIER-DURATION: 120
+      AMPLIFIER: 2
+      COST: 30
+    WITHER: 
+      ITEM: "SPIDER_EYE"
+      AMPLIFIER-DURATION: 100
+      AMPLIFIER: 1
+      COST: 30
+    BLIDNESS: 
+      ITEM: "MAGMA_CREAM"
+      AMPLIFIER-DURATION: 120
+      AMPLIFIER: 0
+      COST: 30
+  EQUIPMENT:
+    HELMET: GOLD_HELMET
+    CHESTPLATE: CHAINMAIL_CHESTPLATE
+    LEGGINGS: CHAINMAIL_LEGGINGS
+    BOOTS: GOLD_BOOTS
+
+JUMPER:
+  ENABLED: true
+  NAME: "Jumper"
+  WARMUP-TIME: 5 #SECONDS
+  WARMUP-ENABLED: true
+  JUMPER-DELAY: 180 #SECONDS
+  JUMPER-ITEM: "NETHER_STAR"
+  EQUIPMENT:
+    HELMET: CHAINMAIL_HELMET
+    CHESTPLATE: IRON_CHESTPLATE
+    LEGGINGS: CHAINMAIL_LEGGINGS
+    BOOTS: IRON_BOOTS
+
+# ~ Mob Stacker Settings
+
+STACK-MOBS:
+- 'ZOMBIE'
+- 'SKELETON'
+- 'SPIDER'
+- 'CAVE_SPIDER'
+- 'COW'
+- 'PIG' 
+- 'SHEEP'
+- 'CHICKEN' 
+
+# ~ King Settings
+
+KING-EVENT:
+  START-KIT: "kit apply KillTheKing %player%"
+
+# ~ Events Settings
+
+TIME-BETWEEN-STARTS: 15 #SECONDS
+
+KOTH:
+  WINNER-PRIZE: 'cr givekey %ign% KOTH 3'
+  START-MESSAGE: '&eKoTH &d%name%'
+  CAPPED: 
+    - "&8[&6&lKoTH&8] &6&l%winner% &ehas captured &6&l%koth% &eafter &6&l%uptime% &eup-time."
+
+CONQUEST:
+  WIN-COMMAND: "crate givekey %player% Conquest 3"
+  START-MESSAGE: '&eConquest &d%name%'
+  WIN-MESSAGE: ''
+  LOSS-POINT-DEATH: 20
+  REQUIRED-POINTS: 150
+  
+DTC:
+  AUTO-REWARD: true
+  REWARD: "pex user %player% group set Vapor"
+  BREAK: 100
+  
+# ~ Glowstone Settings
+
+GLOWSTONE:
+  ENABLED: true
+  
+GLOWSTONE-BROADCAST:
+  0: "&eThe &6&lGlowstone Mountain &ehas reset"
+  
+GLOWSTONE-RESET-BROADCAST:
+  1800: "&eThe &6&lGlowstone Mountain &eis resetting in &6&l30 min"
+
+INTERVAL: 1800 # SECONDS ONLY
+
+MATERIAL: GLOWSTONE # GLOWSTONE ONLY
+
+# ~ Basic Settings
+
+BROADCAST: "&8[&4Alert&8]"
+
+TEAMSPEAK:
+- '&6&lTeamSpeak &8%right-arrow% &ats.vaporhcf.com'
+
+STORE:
+- '&6&lStore &8%right-arrow% &estore.vaporhcf.com'
+
+VOTE:
+- '&6&lVote &8%right-arrow% &ahttps://minecraftservers.org/'
+
+TWITTER:
+- '&6&lTwitter &8%right-arrow% &awww.twitter.com/VaporHCF'
+
+DISCORD:
+- '&6&lDiscord &8%right-arrow% &ediscord.gg/VaporHCF'
+
+# ~ Media Settings
+
+YOUTUBER:
+- '&7&m---------------------------------------'
+- '&cYou&fTuber &cRequierements'
+- '&7%right-arrow% &e500 subscribers'
+- '&7%right-arrow% &e250 views per video'
+- '&7&m---------------------------------------'
+
+FAMOUS:
+- '&7&m---------------------------------------'
+- '&dFamous &cRequierements'
+- '&7%right-arrow% &e1000 subscribers'
+- '&7%right-arrow% &e500 views per video'
+- '&7&m---------------------------------------'
+
+PARTNER:
+- '&7&m---------------------------------------'
+- '&dPartner &cRequierements'
+- '&7%right-arrow% &e2000 subscribers'
+- '&7%right-arrow% &e1000 views per video'
+- '&7&m---------------------------------------'
+
+# ~ World Settings
+
+WORLD-SPAWN:
+  WORLD-SPAWN: '[world,0.0,70.0,0.0,-3.829643,8.142644]'
+  NETHER-SPAWN: '[world_nether,0.0,70.0,0.0,-3.829643,8.142644]'
+  END-EXIT: '[world,0.0,70.0,0.0,-3.829643,8.142644]'
+  END-SPAWN: '[world_the_end,0.0,70.0,0.0,-3.829643,8.142644]'
+  EOTW-FFA: '[world,0.0,70.0,0.0,-3.829643,8.142644]'
+
+# ~ Spawn Coordinates Settings
+
+SPAWN-COORDINATES:
+    CRATES:
+        X: 0
+        Y: 0
+        Z: 0
+    SHOP:
+        X: 0
+        Y: 0
+        Z: 0
+        
+# ~ END Coordinates Settings
+
+END-COORDINATES:
+    EXIT:
+        X: 0
+        Y: 0
+        Z: 0

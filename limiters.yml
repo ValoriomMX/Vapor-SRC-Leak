@@ -1,0 +1,107 @@
+######################   INSTRUCTIONS   ######################
+###  Use -1 for no change                                  ###
+###  Use 0 to disable enchantment                          ### 
+###  Use other values to limit enchantment level           ###
+##############################################################
+enchantment-limiter: 
+  ARROW_DAMAGE: 4
+  ARROW_FIRE: 0
+  ARROW_INFINITE: -1
+  ARROW_KNOCKBACK: 0
+  DAMAGE_ALL: 1
+  DAMAGE_ARTHROPODS: 0
+  DAMAGE_UNDEAD: -0
+  DIG_SPEED: -1
+  DURABILITY: -1
+  FIRE_ASPECT: 0
+  KNOCKBACK: 0
+  LOOT_BONUS_BLOCKS: -1
+  LOOT_BONUS_MOBS: -1
+  LUCK: -1
+  LURE: -1
+  OXYGEN: 0
+  PROTECTION_ENVIRONMENTAL: 1
+  PROTECTION_EXPLOSIONS: 0
+  PROTECTION_FALL: 0
+  PROTECTION_FIRE: 0
+  PROTECTION_PROJECTILE: 0
+  SILK_TOUCH: -1
+  THORNS: 0
+  WATER_WORKER: -1
+
+######################   INSTRUCTIONS   ######################
+###  Use -1 for no change                                  ###
+###  Use 0 to disable potion                               ### 
+###  Use other values to limit potion level                ###
+###  Change extended to false to disable extended potions  ###
+##############################################################
+potion-limiter:
+  SPEED:
+    level: -1
+    extended: true
+  SLOW:
+    level: 1
+    extended: false
+  FAST_DIGGING:
+    level: -1
+    extended: true
+  SLOW_DIGGING:
+    level: -1
+    extended: true
+  INCREASE_DAMAGE:
+    level: 0
+    extended: true
+  HEAL:
+    level: -1
+    extended: true
+  HARM:
+    level: 0
+    extended: true
+  JUMP:
+    level: -1
+    extended: true
+  CONFUSION:
+    level: -1
+    extended: true
+  REGENERATION:
+    level: 0
+    extended: true
+  DAMAGE_RESISTANCE:
+    level: -1
+    extended: true
+  FIRE_RESISTANCE:
+    level: -1
+    extended: true
+  WATER_BREATHING:
+    level: -1
+    extended: true
+  INVISIBILITY:
+    level: -1
+    extended: true
+  BLINDNESS:
+    level: -1
+    extended: true
+  NIGHT_VISION:
+    level: -1
+    extended: true
+  HUNGER:
+    level: 0
+    extended: true
+  WEAKNESS:
+    level: 0
+    extended: true
+  POISON:
+    level: 1
+    extended: false
+  WITHER:
+    level: -1
+    extended: true
+  HEALTH_BOOST:
+    level: -1
+    extended: true
+  ABSORPTION:
+    level: -1
+    extended: true
+  SATURATION:
+    level: -1
+    extended: true

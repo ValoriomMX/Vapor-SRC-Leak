@@ -1,0 +1,22 @@
+HOLOGRAMS:
+  MAIN-COLOR: "&b"
+  KILLS: 
+    FIRST-LINE: "&7&m-----&b&l Kills Leaderboard &7&m-----"
+  DEATHS: 
+    FIRST-LINE: "&7&m-----&b&l Deaths Leaderboard &7&m-----"
+  POINTS: 
+    FIRST-LINE: "&7&m-----&b&l Top Factions &7&m-----"
+
+LOCATIONS:
+  KILLS:
+    X: 0
+    Y: 70
+    Z: 0
+  DEATHS:
+    X: 5
+    Y: 70
+    Z: 5
+  POINTS:
+    X: 10
+    Y: 70
+    Z: 10

@@ -1,0 +1,476 @@
+MESSAGES:
+
+# ~ Main Messages
+
+  NO-PERMISSIONS: "&CYou dont have permission."
+  NO-CONSOLE: "&cNo Console."
+
+# ~ Faction Help Message
+
+  FACTION-HELP:
+    '1':
+    - "&7&m-----------------------------------------------------"
+    - "&9&lFaction Help &7(Page 1/3)"
+    - "&7&m-----------------------------------------------------"
+    - "&7General Commands:"
+    - " &7/f create <factionName> &f- Create a new faction"
+    - " &7/f accept <factionName> &f- Accept a pending invitation"
+    - " &7/f leave &f- Leave your current faction"
+    - " &7/f home &f- Teleport to your faction home"
+    - " &7/f stuck &f- Teleport out of enemy territory"
+    - " &7/f depositlives <amount&7/&7all> &f- Deposit lives into your faction lives"
+    - " &7/f deposit <amount&7/&7all> &f- Deposit money into your faction balance"
+    - " &7/f top &f- Factions Points"
+    - " &7To view other pages, use &f/f help <#>"
+    - "&7&m-----------------------------------------------------"
+    '2':
+    - "&7&m-----------------------------------------------------"
+    - "&9&lFaction Help &7(Page 2/3)"
+    - "&7&m-----------------------------------------------------"
+    - "&7Information Commands:"
+    - " &7/f who <player&7/&7factionName] &f- Display faction information"
+    - " &7/f uninvite <player> &f- Revoke an invitation"
+    - " &7/f invites &f- List all open invitations"
+    - " &7/f kick <player> &f- Kick a player from your faction"
+    - " &7/f claim &f- Start a claim for your faction"
+    - " &7/f subclaim &f- Show the subclaim help page"
+    - " &7/f sethome &f- Set your faction's home at your current location"
+    - " &7/f withdraw <amoun> &f- Withdraw money from your faction's balance"
+    - " &7/f revive <playerName> &f- Revive players with faction lives"
+    - " &7/f announcement [message here] &f- Set your faction's announcement"
+    - " &7To view other pages, use &f/f help <#>"
+    - "&7&m-----------------------------------------------------"
+    '3':
+    - "&7&m-----------------------------------------------------"
+    - "&9&lFaction Help &7(Page 3/3)"
+    - "&7&m-----------------------------------------------------"
+    - "&7Leader Commands:"
+    - " &7/f coleader <player> &f- Add co-leader"
+    - " &7/f promote <player> &f- Add or remove a captain"
+    - " &7/f unclaim &f- Unclaim land"
+    - " &7/f rename <newName> &f- Rename your faction"
+    - " &7/f disband &f- Disband your faction"
+    - " &7/f friendlyfire &f- Toggle faction damage"
+    - " &7/f rally &f- Starts faction rally"
+    - " &7 To view other pages, use &f/f help <#>"
+    - "&7&m-----------------------------------------------------"
+    '4':  
+    - "&7&m-----------------------------------------------------"
+    - "&9&lFaction Staff Help"
+    - "&7&m-----------------------------------------------------"
+    - "&7Staff Commands:"
+    - " &7/f forcedemote <player> &f- Force demote player"
+    - " &7/f givebal [player&7/&7factionName] [balance] &f- Gives balance to a player's faction"
+    - " &7/f setlives [player&7/&7factionName] [lives] &f- Gives lives to a player's faction"
+    - " &7/f forcejoin [player&7/&7factionName] &f- Force joins player factions"
+    - " &7/f forcekick <player> &f- Force kick player from faction"
+    - " &7/f forcepromote <player> &f- Force promote player from faction"
+    - " &7/f setdtr [player&7/&7factionName] &f- Set dtr to player faction"
+    - " &7/f setdtrregen [player&7/&7factionName] &f- Set dtrregen to player faction"
+    - " &7 To view other pages, use &f/f help <#>"
+    - "&7&m-----------------------------------------------------"
+
+# ~ Faction Messages
+
+  FACTION-MESSAGES:
+    CREATE: "&eFaction &9%faction% &ehas been &acreated &eby &f%player%"
+    DISBAND: "&eFaction &9%faction% &ehas been &cdisbanded &eby &f%player%"
+    JOINED: "%player% &fhas joined the faction."
+    FF-DISABLED: "&c%player% disabled the friendly fire."
+    FF-ENABLED: "&a%player% enabled the friendly fire."
+    ALLY: "&eYour faction is now &d%allied% &ewith &d%faction%&e!"
+    ALLY-TARGET: "&eYour faction is now &d%allied% &ewith &d%faction%&e!"
+    ALLIED: "%faction% &ewere informed that you wish to be &d%allied%"
+    ALLIED-TARGET: "%faction% &ehas sent a request to be %allied%. Use &e/faction ally %faction-name% &eto accept!"
+    UNALLY: "&eYour faction has dropped its %allied% &ewith %faction%."
+    UNALLY-TARGET: "%faction% &ehas dropped their %allied% &ewith your faction."
+    NO-ALLIED: "&eYour faction is not %allied% &ewith %faction%&e."
+    CANT-UNALLY: "&cCould not drop &l%allied% &cwith &l%faction%"
+    CAMP: "&9Now camping &f%faction%"
+    CAMP-DISABLE: "&c%player% disabled faction camp."
+    ALLY-REQUESTED: "&eYour faction has already requested to %allied% &ewith %faction%&e!"
+    RECRUITMENT: 
+      - "&7The faction &c%faction% &7is now recruiting!"
+    RALLY: 
+      - ""
+      - "&aA rally has been created in your faction, you can view it on the scoreboard."
+      - ""
+    
+# ~ Faction Show Message
+
+  FACTION-SHOW:
+    MAIN-COLOR: "&9"
+    KILLS: "&a%player% &9[&b%kills%&9]"
+    HOME: " &9HQ: "
+    ALLIES: "&9Allies: &c"
+    LEADER: "&9Leader: &c"
+    COLEADERS: "&9Co-Leaders: &c"
+    CAPTAINS: "&9Captains: &c"
+    MEMBERS: "&9Members: &c"
+    ANNOUNCEMENT: "&9Announcement: &a"
+    ANNOUNCEMENT-NONE: "&9Announcement: &7None"
+    MONEY: "&9Money: &a$"
+    STATUS: "&9Status:"
+    POINTS: "&9Points: &c"
+    KOTH-CAPTURES: "&9KOTH Captures: &c"
+    CONQUEST-CAPTURES: "&9Conquest Captures: &c"
+    DTR: "&9Deaths until Raidable: "
+    DTR-TEXT: "&7Click to edit faction DTR"
+    DTRREGEN: "&9Time Until Regen: &5"
+    DTRREGEN-TEXT: "&7Click to edit faction DTR Regen"
+
+# ~ Death Messages
+
+  DEATH-MESSAGES:
+    KILL: "&9%victim% &7was slain by &9%attacker%"
+    SHOT: "&9%victim% &7was shot by &9%attacker%"
+    USING: " &7Using &9%item%."
+    USING-1: " &7Using &9%item%."
+    DIED: "&9%victim% &7died"
+    FALL: "&9%victim% &7fell from a high place"
+    FIRE: "&9%victim% &7died to fire"
+    LIGHTNING: "&9%victim% &7died to a lightning"
+    WITHER: "&9%victim% &7withered away"
+    DROWN: "&9%victim% &7has drowned"
+    CRUSH: "&9%victim% &7died to a falling block"
+    MAGIC: "&9%victim% &7died to magic"
+    VOID: "&9%victim% &7fell into the void"
+    EXPLOSION: "&9%victim% &7has exploded"
+    LAVA: "&9%victim% &7tried to swim in lava"
+    STARVATION: "&9%victim% &7has starved"
+    KILLS-VARIABLE: "%player% &a(%kills%)"
+    
+    
+# ~ Abilities Messages
+  
+  ABILITIES:
+    ANTIFALL:
+      COOLDOWN:  "&cYou can't use this for another %cooldown% seconds."
+    AUTOBOW:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+    BELCHBOMB:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      PVP-TIMER: "&cYou can't use &c&lBelch Bomb &cwith PvP Timer!"
+      SOTW: "&cYou can't use &c&lBelch Bomb &cduring the SOTW!"
+      SAFEZONE: "&cYou can't use that here"
+    COCAINE:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+      USED: "&cSniff! You used the Cocaine!"
+    FAKEPEARL:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+    FASTPEARL:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+    FIREBALL:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+    FREEZEGUN:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"   
+      USED: "&c\u2764 &eYou have poisoned with &e&lFreeze Gun&e!"
+    MAGICPILL:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"   
+      USED: "&eYou used the Magic Pill &7(Regeneration 5)"
+    MIXER:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here" 
+      USED: "&eYou used the Mixer &ewith &6&l%victim%"
+      VICTIM: "&6&l%damager% &ehas been usage Mixer" 
+      VICTIM-SWITCH: "&cYour hotbar has been switch!"
+    NINJASHEAR:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      TELEPORTING: "&6%damager% &ewill be teleporting to you using the &6Ninja Shear &ein &63 seconds..."
+      TELEPORTED: "&eUsed &6Ninja Shear &eto teleport to attacker!"
+      FAILED: "&6Failed to use &fNinja Shear &6there's no last hit within 10 seconds!"
+    POCKETBARD:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here" 
+      STRENGTH: "&eYou've received a random bard effect &7(Strength II)"
+      RESISTANCE: "&eYou've received a random bard effect &7(Resistance III)"
+      REGENERATION: "&eYou've received a random bard effect &7(Regeneration III)"
+      SPEED: "&eYou've received a random bard effect &7(Speed III)"
+      JUMP: "&eYou've received a random bard effect &7(Jump V)"
+    RAWPOTION:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+    ROCKET:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+    ROTTENEGG:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+      SOTW: "&cYou can't use &c&lRotten Egg &cduring the SOTW!"
+      POISONED-VICTIM: "&3%damager% &fhas poisoned you"
+      POISONED: "&fYou have poisoned &3%victim%."
+      POISONED-VICTIM-INVISIBILITY: "&3??? &fhas poisoned you"
+      POISONED-INVISIBILITY: "&fYou have poisoned &3???"
+    SHIELD:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+    STORMBREAKER: 
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+      PVP-TIMER: "&cYou can't use &c&lBelch Bomb &cwith PvP Timer!"
+      SOTW: "&cYou can't use &c&lRotten Egg &cduring the SOTW!"
+      VICTIM: "&cYou have been smited by %damager%'s Storm Breaker."
+      DAMAGER: "&aYou have smited %victim% with your Storm Breaker."
+    SUPERAXE:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+      VICTIM: " &f» &6&l%damager% &ehas used the SuperAxe" 
+      VICTIM-1: " &f» &eYour helmet is now in your inventory"
+      DAMAGER: " &f» &eYou used the SuperAxe &eagainst &6&l%victim%"
+      INVENTORY-FULL: "&cYour inventory is full! Your helmet was dropped on the ground!"
+    SWITCHER:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+      SOTW: "&cYou can't use &c&lSwitcher &cduring the SOTW!"
+      FAILED: "Failed to switched %victim% out of range"
+      SWITCHED: "&aYou've switched places with %victim%"
+    SWITCHSTICK:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      VICTIM: "&aYou have been turned around 180 degrees thanks to %damager%"
+      DAMAGER: "&aYou have used your &9&lSwitch Stick &aon %victim%"
+    TRAPEVADING:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"
+      FAILED: "Failed to apply trap evading to %victim%, because is out of range."
+      DAMAGER: "&c\u2764 &b%victim% &9cannot place blocks for the next 15 seconds."
+      VICTIM: "&c\u2764 &9You cannot place blocks for the next 15 seconds!"
+    WITHERGUN:
+      COOLDOWN: "&cYou can't use this for another %cooldown% seconds."
+      SAFEZONE: "&cYou can't use that here"   
+      USED: "&c\u2764 &eYou have withered with &e&lWither Gun&e!"
+      
+# ~ REC Message
+
+  REC-MESSAGE:
+    - '&7&m-----------------------------------'
+    - '&c&l%player% &7is now recording'
+    - '&7&m-----------------------------------'
+
+# ~ Stream Message
+
+  STREAM-MESSAGE:
+    - '&7&m-----------------------------------'
+    - '&5&l%player% &7is now streaming'
+    - '&7&m-----------------------------------'
+
+# ~ Coords Message    
+
+  COORDS:
+    - '&7&m--------------------------------'
+    - '&9&lVapor &8» &fCoordinates'
+    - '&7&m--------------------------------'
+    - '&9&lKoTHs Locations'
+    - ""
+    - "&9Jungle &7»&7 300 x 300 &c(Overworld)"
+    - "&9Explosion &7»&7 -300 x -300 &c(Overworld)"
+    - "&9Cathedral &7»&7 -300 x 300 &c(Overworld)"
+    - "&9Mushroom &7»&7 300 x -300 &c(Overworld)"
+    - "&9End &7»&7 124 x 64 &3(End World)"
+    - ""
+    - '&9&lMisc Loocations'
+    - ""
+    - "&bEnd Exit &6»&7 200 &c(Overworld)"
+    - "&eGlowstone &6»&7 - &c(Overworld)"
+    - '&7&m--------------------------------'
+
+# ~ Help Message    
+
+  HELP:
+    - '&7&m------------------------------------------'
+    - '&6&lHardcore Factions Help &7 - &eInformation on HCF'
+    - '&7&m------------------------------------------'
+    - '&5Map Information:'
+    - '&eCurrent Map:&7 Map 1'
+    - '&eMap Border:&7 3000'
+    - '&eWarzone Until:&7 800'
+    - '&eEnd Portals:&7 1000, 1000 in each quadrant'
+    - '&eEnchant Limits:&7 Protection 1, Sharpness 1, Power 3'
+    - ' '
+    - '&5Helpful Commands:'
+    - '&e/report <player> <reason> &7- Report cheaters with this command!'
+    - '&e/request <reason> &7- Request staff assistance.'
+    - ' '
+    - '&5Chat Commands:'
+    - '&eGlobal Chat &7- Prefix your message with ''&7!&7'' or type ''&7''/f c p&7'' to set.'
+    - '&eTeam Chat &7- Prefix your message with ''&7@&7'' or type ''&7''/f c f&7'' to set.'
+    - ' '
+    - '&5Other Information:'
+    - '&eOfficial Teamspeak &7- &6ts.vaporhcf.com'
+    - '&eTwitter &7- &6www.twitter.com/VaporHCF'
+    - '&eStore &7- &6store.vaporhcf.com'
+    - '&7&m------------------------------------------'
+
+# ~ Staff Messages
+
+  STAFF:
+    CHAT: "&7[&9SC&7] &9%player%: &f%message%"
+    CHAT-ENABLED: "&7Staff-Chat: &aEnabled"
+    CHAT-DISABLED: "&7Staff-Chat: &cDisabled"
+    HIDE: "&eVanished staffs has hidden."
+    UNHIDE: "&7Vanished staffs has un-hidden."
+    STAFF-ENABLED: "&7Staff-Mode: &aEnabled."
+    STAFF-DISABLED: "&7Staff-Mode: &cDisabled."
+    JOIN: "&a(!) Staff Connected: &f%player%."
+    LEAVE: "&c(!) Staff Disconnected: &f%player%."
+    VANISH: "&7Vanished: &aTrue"
+    UNVANISH: "&7Vanished: &cFalse"
+    FREEZED:
+      - "&7&m------------------------------------"
+      - " &7You have been frozen by a &9staff member"
+      - "   &7If you disconnect you will be &9&lBANNED"
+      - "     &7Please connect to our teamspeak"
+      - "          &9ts.vapor.com"
+      - "        &7You have 3 minutes to join"
+      - "------------------------------------"
+
+# ~ Events Messages
+
+  CONQUEST:
+    FACTION-REQUIRED: "&cYou must be in faction to contest Conquest."
+    STARTED: "&8[&6&lConquest&8] &6%conquest% &ecan now be contested."
+    ATTEMPING-CONTROL: "&8[&6&lConquest&8] &eAttempting to control %conquest% &7(%remaining%)"
+    PLAYER-KNOCKED: "&8[&6&lConquest&8] &a%player% &ewas knocked off %conquest%"
+    GAINED-POINTS: "&8[&6&lConquest&8] &a%faction% &ehas gained 1 point for capturing %conquest% &7(%points%/%maxpoints%)"
+    LOST-POINTS: "&8[&6&lConquest&8] &a%faction% &ehas lost %deathpoints% because %player% died &7(%points%/%maxpoints%)"
+  KOTH:
+    START: "&8[&6&lKoTH&8] &6%koth% &ecan now be contested. &c(%time%)"
+    FACTION-REQUIRED: "&cYou must be in faction to contest Koth."
+    CONTROLLING: "&cYou are now controlling %koth%"
+    CONTROLLING-LOST: "&cYou are no longer controlling %koth%"
+    CONTROL-LOST: "&8[&6&lKoTH&8] &f%player% &ehas lost control of &f%koth% &a(%remaining%)"
+    SOMEONE-CONTROLLING: "&8[&6&lKoTH&8] &eSomeone is controlling &f%koth% &a(%remaining%)"
+
+# ~ Nether Players Message
+
+  NETHER-PLAYERS:
+    - "&7&m-------------------------------------------------"
+    - "&7There are &c%netherplayers% &7in the &cNether"
+    - "&7&m-------------------------------------------------"
+
+# ~ End Players Message
+
+  END-PLAYERS:
+    - "&7&m-------------------------------------------------"
+    - "&7There are &9%endplayers% &7in the &9End"
+    - "&7&m-------------------------------------------------"
+
+# ~ Join Counter Message
+
+  JOIN-COUNTER-ENABLED: true
+  JOIN-COUNTER: "&9[A] &7Welcome &9%player% &7to the server &7[#%player-count%]"
+  
+# ~ Kit Messages
+
+  KIT:
+    USE-DEFAULT-HELP: false
+    CUSTOM-HELP:
+      - ""
+      - "&9&lKit Help"
+      - "&7/kit name"
+      - ""
+    
+# ~ Save Messages
+
+  SAVE:
+    ENABLED: true
+    SAVING: "&7[&9S&7] &7Saving..."
+    SUCCESSFULLY: "&7[&9S&7] &7Successfully Saved."
+  
+# ~ Join Messages
+
+  JOIN-MESSAGE:
+    - "&7&m--------------------------------------------------"
+    - "&7Welcome to &9&lVapor &7[&fIII&7]"
+    - ""
+    - "&7Faction Size - &f10 Man & No Allies"
+    - "&7Mapkit - &fProt 1 & Sharp 1"
+    - "&7Teamspeak - &fts.vaporhcf.com"
+    - "&7Discord - &fdiscord.gg/VaporHCF"
+    - "&7Store - &fstore.vaporhcf.com"
+    - "&7&m--------------------------------------------------"
+  
+# ~ Claim Messages
+
+  CLAIM:
+    ENTERING: "&7Now entering &9%right-arrow% %tofaction%&7 (%deathbantofaction%&7)"
+    LEAVING: "&7Now leaving &9%right-arrow% %fromfaction%&7 (%deathbanfromfaction%&7)"
+
+# ~ Another Messages
+
+  CHAT:
+    KILLSTREAK-MESSAGE: '&7[&6&lKillStreaks&7] &e&l%player% &7received &e&l%itemmessage% &7 from their killstreak of &e&l%killstreaks%&7.'
+    GAPPLE: "&cYour &6&lGolden Apple &ctimer is active for another &l%time%&c."
+    GAPPLE-INACTIVE: "&cYour &6&lGolden Apple&c timer is currently not active."
+    ADVENTURE: "&7Set gamemode to &eAdventure."
+    CREATIVE: "&7Set gamemode to &aCreative."
+    SURVIVAL: "&7Set gamemode to &cSurvival."
+    ADVENTURE-OTHER: "&7Set gamemode of &e%name% &7to &eAdventure."
+    CREATIVE-OTHER: "&7Set gamemode of &e%name% &7to &aCreative."
+    SURVIVAL-OTHER: "&7Set gamemode of &e%name% &7to &cSurvival."
+    TO: "&7(&fTo %player%) &7%message%"
+    FROM: "&7(&fFrom %player%) &7%message%"
+
+# ~ Stats Message
+
+  STATS:
+    - "&7&m-------------------------------------"
+    - "&9&lYour Stats"
+    - ""
+    - "&9&lStatistics"
+    - "&7Current Faction: &2%faction%"
+    - "&7Kills: &a%kills%"
+    - "&7Deaths: &c%deaths%"
+    - "&7Balance: &2$%balance%"
+    - ""
+    - "&9&lOre Statistics"
+    - "&aEmeralds: &7%emeralds%"
+    - "&bDiamonds: &7%diamonds%"
+    - "&eGold: &7%gold%"
+    - "&cRedstone: &7%redstone%"
+    - "&7Iron: &7%iron%"
+    - "&8Coal: &7%coal%"
+    - "&9Lapis: &7%lapis%"
+    - ""
+    - "&7&m-------------------------------------"
+    
+  STATS-TARGET:
+    - "&7&m-------------------------------------"
+    - "&9&l%name%'s Stats"
+    - ""
+    - "&9&lStatistics"
+    - "&7Current Faction: &2%faction%"
+    - "&7Kills: &a%kills%"
+    - "&7Deaths: &c%deaths%"
+    - "&7Balance: &2$%balance%"
+    - ""
+    - "&9&lOre Statistics"
+    - "&aEmeralds: &7%emeralds%"
+    - "&bDiamonds: &7%diamonds%"
+    - "&eGold: &7%gold%"
+    - "&cRedstone: &7%redstone%"
+    - "&7Iron: &7%iron%"
+    - "&8Coal: &7%coal%"
+    - "&9Lapis: &7%lapis%"
+    - ""
+    - "&7&m-------------------------------------"
+
+# ~ SOTW Message
+
+  SOTW-ENDED:
+    - "&7&m--------------------------------"
+    - "&a&lSOTW &chas ended!"
+    - "&cGood Lock everyone!" 
+    - "&7&m--------------------------------"
+    
+  SOTW-START:
+    - "&cStarted &a&lSOTW Protection&c for &l%time%&c."
+    
+  SOTW-ENABLE: "&cYour SOTW is now Enabled."
+  SOTW-ENABLED: "&cYou have already enabled your SOTW."
+  SOTW-CANCELED: "&cCancelled SOTW protection."
+  SOTW-HIDE: "&a&lAll players has been hidden!"
+  SOTW-UNHIDE: "&a&lAll players has been un-hidden!"
+        

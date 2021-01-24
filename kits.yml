@@ -1,0 +1,25 @@
+options:
+  delay: 0
+  
+## KITS ##
+
+basic:
+- ==: org.bukkit.inventory.ItemStack
+  type: STONE
+- ==: org.bukkit.inventory.ItemStack
+  type: LOG
+- ==: org.bukkit.inventory.ItemStack
+  type: WOOD
+- ==: org.bukkit.inventory.ItemStack
+  type: IRON_BLOCK
+- ==: org.bukkit.inventory.ItemStack
+  type: SMOOTH_STAIRS
+- ==: org.bukkit.inventory.ItemStack
+  type: WOOD_STAIRS
+- ==: org.bukkit.inventory.ItemStack
+  type: STEP
+  damage: 5
+- ==: org.bukkit.inventory.ItemStack
+  type: WOOD_STEP
+- ==: org.bukkit.inventory.ItemStack
+  type: COBBLE_WALL
